@@ -14,11 +14,13 @@ def 필터_가져오기():
     사용자로부터 분석할 도시, 월, 요일을 입력받습니다.
 
     Returns:
+
         도시 (str): 분석할 도시 이름
         월 (str): 필터링할 월 이름 또는 "all" (모든 월)
         요일 (str): 필터링할 요일 이름 또는 "all" (모든 요일)
+    
     """
-    print('안녕하세요! 미국 자전거 공유 데이터를 탐색해봅시다!')
+    print('안녕! 미국 자전거 공유 데이터를 탐색해보자!')
 
     # 도시 이름 입력받기
     도시 = ""
@@ -32,7 +34,7 @@ def 필터_가져오기():
     유효한_월 = ['all', 'january', 'february', 'march', 'april', 'may', 'june',
                'july', 'august', 'september', 'october', 'november', 'december']
 
-    while 월 not in 유효한_월:
+    while 월 not in valid_월:
         월 = input("필터링할 월을 입력하세요 (예: 'all', 'january' ... 'december'): ").lower()
 
     # 요일 입력받기
@@ -92,7 +94,7 @@ def 시간_통계(데이터):
     print('-'*40)
 
 def 역_통계(데이터):
-    """가장 인기 있는 출발지와 도착지, 그리고 여행 경로에 대한 통계를 계산합니다."""
+
     print('\n가장 인기 있는 출발지와 도착지, 그리고 여행 경로 통계를 계산 중입니다...\n')
     시작시간 = time.time()
 

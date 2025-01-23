@@ -14,9 +14,11 @@ def 필터_가져오기():
     사용자로부터 분석할 도시, 월, 요일을 입력받습니다.
 
     Returns:
+
         도시 (str): 분석할 도시 이름
         월 (str): 필터링할 월 이름 또는 "all" (모든 월)
         요일 (str): 필터링할 요일 이름 또는 "all" (모든 요일)
+    
     """
     print('안녕! 미국 자전거 공유 데이터를 탐색해보자!')
 
@@ -32,7 +34,7 @@ def 필터_가져오기():
     유효한_월 = ['all', 'january', 'february', 'march', 'april', 'may', 'june',
                'july', 'august', 'september', 'october', 'november', 'december']
 
-    while 월 not in 유효한_월:
+    while 월 not in valid_월:
         월 = input("필터링할 월을 입력하세요 (예: 'all', 'january' ... 'december'): ").lower()
 
     # 요일 입력받기
